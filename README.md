@@ -39,9 +39,13 @@ LIRI Bot will run spotify-this-song for I Want it That Way. It reads the file ra
 
 # Built With:
 node.js - Javascript runtime environment
+
 Request - For calling Bands in Town & OMDB APIs
+
 Node Spotify API - For spotify-this-song feature
+
 Bands in Town Events API - For concert-this feature
+
 OMDB API - For movie-this feature
 
 
