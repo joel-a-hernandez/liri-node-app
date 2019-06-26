@@ -26,6 +26,8 @@ example: node liri.js movie-this "movie"
 
 you will be presented with the movie title, year, IMDB and Rotten Tomatoes ratings (given they are returned by the API), country, language, plot, and actors for the selected movie. This queries the OMDB API using Request to return this information to the user. 
 
+![](images/movie-this.png)
+
 # do-what-it-says
 
 example: node liri.js do-what-it-says
