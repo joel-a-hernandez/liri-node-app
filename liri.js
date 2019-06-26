@@ -1,8 +1,8 @@
 var axios = require("axios");
 var fs = require('fs');
 var Spotify = require('node-spotify-api');
-
-
+require("dotenv").config();
+console.log(process.env.id)
 var command = process.argv[2];
 var secondCommand = process.argv[3];
 
@@ -60,8 +60,8 @@ function doThing(){
 
 function spotifyThisSong (){
     var spotify = new Spotify({
-        id: "bad1e3e4b5f54951a2fcd573d045e04d",
-        secret: "59e0f088ef6646fa9b3e7ef055317182"
+        id: process.env.id,
+        secret: process.env.secret
       });
     spotify.search({ type: 'track', query: secondCommand, limit: 1}, function(error, data){
         if(!error){
